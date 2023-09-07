@@ -26,7 +26,7 @@ function PhotoDetails () {
     return (
         <div className='photo-datails-wrapper'>
             <div className='photo-details-image-wrapper'>
-                <img src={photo.image} />
+                <img id='detail-img' src={photo.image} />
             </div>
             <div className='image-info-wrapper'>
                 <h1 className='image-heading'>{photo.title}</h1>

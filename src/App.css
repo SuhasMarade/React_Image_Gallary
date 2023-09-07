@@ -1,1 +1,11 @@
+.outer-gallary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.gallary-heading {
+    margin: 0.5rem auto;
+    font-size: 3rem;
+
+}

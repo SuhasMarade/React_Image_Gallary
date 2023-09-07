@@ -1,0 +1,33 @@
+.photo-datails-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3rem 5rem;
+    padding-right: 5rem;
+    gap: 2rem;
+    background-color: #3f0554;
+    box-shadow: 1px 1px 6px 5px #bdbcbc;
+    
+}
+
+#detail-img {
+    width: 400px;
+    height: 350px;
+    margin: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 6px 5px #dc8bfa;
+}
+
+
+.image-heading {
+    color: #f8f4f4;
+    font-size: 50px;
+    letter-spacing: 0.1rem;
+}
+
+.image-info {
+    margin-top: 1.3rem;
+    color: rgb(234, 224, 224);
+    font-size: large;
+    letter-spacing: 0.08rem;
+}
