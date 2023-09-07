@@ -1,7 +1,14 @@
+import { Link } from 'react-router-dom';
 import './Photo.css'
-function Photo ({image}) {
+function Photo ({image, id}) {
     return (
-            <img id="photo" src={image} />
+        <div className='photo'>
+            <Link to={`photo/${id}`}>
+                <img id="photo-image" src={image} />
+            </Link>
+            
+        </div>
+            
     );
 }
 
