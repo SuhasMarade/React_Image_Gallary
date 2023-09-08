@@ -4,12 +4,16 @@ import {useParams} from 'react-router-dom'
 import axios from 'axios';
 function PhotoDetails () {
     const {id} = useParams();
+    // photo state variable to store data of image from in object
     const [photo, setPhoto] = useState({});
 
     async function downloadPhoto() {
+
+        // get id from useParams() to fetch data of single image
         const response = await axios.get(`https://api.slingacademy.com/v1/sample-data/photos/${id}`)
         console.log(response.data);
 
+        // set object of image data to photo state variable
         setPhoto({
             id: response.data.photo.id,
             title: response.data.photo.title,
@@ -19,10 +23,11 @@ function PhotoDetails () {
        
     }
     console.log(photo);
-
+// Independent useEffect() it takes dowloadPhoto() function to fetch data of single image
     useEffect(() => {
         downloadPhoto()
     },[])
+    // Result that PhotoDetails return
     return (
         <div className='photo-datails-wrapper'>
             <div className='photo-details-image-wrapper'>
@@ -36,4 +41,5 @@ function PhotoDetails () {
     );
 }
 
+// making photoDetails component to accessible
 export default PhotoDetails;

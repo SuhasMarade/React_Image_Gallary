@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import './App.css'
 import CustomRoutes from './components/routes/CustomRoutes'
 
+// It is a submain root component, 
 function App() {
 
   return (

@@ -1,9 +1,11 @@
+/* setting basic css for all element  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Link tag  */
 a {
     text-decoration: none;
 }
