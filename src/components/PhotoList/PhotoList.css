@@ -18,3 +18,16 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.controls button {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+}
